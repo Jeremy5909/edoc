@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD38C5322BA9FB01006A9A96 /* edocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38C5312BA9FB01006A9A96 /* edocApp.swift */; };
+		CD38C5342BA9FB01006A9A96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38C5332BA9FB01006A9A96 /* ContentView.swift */; };
+		CD38C5362BA9FB01006A9A96 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38C5352BA9FB01006A9A96 /* Item.swift */; };
+		CD38C5382BA9FB03006A9A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD38C5372BA9FB03006A9A96 /* Assets.xcassets */; };
+		CD38C53B2BA9FB03006A9A96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD38C53A2BA9FB03006A9A96 /* Preview Assets.xcassets */; };
+		CD38C5462BA9FB04006A9A96 /* edocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38C5452BA9FB04006A9A96 /* edocTests.swift */; };
+		CD38C5502BA9FB04006A9A96 /* edocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38C54F2BA9FB04006A9A96 /* edocUITests.swift */; };
+		CD38C5522BA9FB04006A9A96 /* edocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38C5512BA9FB04006A9A96 /* edocUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD38C5422BA9FB04006A9A96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD38C5262BA9FB01006A9A96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD38C52D2BA9FB01006A9A96;
+			remoteInfo = edoc;
+		};
+		CD38C54C2BA9FB04006A9A96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD38C5262BA9FB01006A9A96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD38C52D2BA9FB01006A9A96;
+			remoteInfo = edoc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD38C52E2BA9FB01006A9A96 /* edoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD38C5312BA9FB01006A9A96 /* edocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edocApp.swift; sourceTree = "<group>"; };
+		CD38C5332BA9FB01006A9A96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD38C5352BA9FB01006A9A96 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CD38C5372BA9FB03006A9A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD38C53A2BA9FB03006A9A96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD38C53C2BA9FB03006A9A96 /* edoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = edoc.entitlements; sourceTree = "<group>"; };
+		CD38C5412BA9FB04006A9A96 /* edocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = edocTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD38C5452BA9FB04006A9A96 /* edocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edocTests.swift; sourceTree = "<group>"; };
+		CD38C54B2BA9FB04006A9A96 /* edocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = edocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD38C54F2BA9FB04006A9A96 /* edocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edocUITests.swift; sourceTree = "<group>"; };
+		CD38C5512BA9FB04006A9A96 /* edocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edocUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD38C52B2BA9FB01006A9A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD38C53E2BA9FB04006A9A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD38C5482BA9FB04006A9A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD38C5252BA9FB01006A9A96 = {
+			isa = PBXGroup;
+			children = (
+				CD38C5302BA9FB01006A9A96 /* edoc */,
+				CD38C5442BA9FB04006A9A96 /* edocTests */,
+				CD38C54E2BA9FB04006A9A96 /* edocUITests */,
+				CD38C52F2BA9FB01006A9A96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD38C52F2BA9FB01006A9A96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD38C52E2BA9FB01006A9A96 /* edoc.app */,
+				CD38C5412BA9FB04006A9A96 /* edocTests.xctest */,
+				CD38C54B2BA9FB04006A9A96 /* edocUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD38C5302BA9FB01006A9A96 /* edoc */ = {
+			isa = PBXGroup;
+			children = (
+				CD38C5312BA9FB01006A9A96 /* edocApp.swift */,
+				CD38C5332BA9FB01006A9A96 /* ContentView.swift */,
+				CD38C5352BA9FB01006A9A96 /* Item.swift */,
+				CD38C5372BA9FB03006A9A96 /* Assets.xcassets */,
+				CD38C53C2BA9FB03006A9A96 /* edoc.entitlements */,
+				CD38C5392BA9FB03006A9A96 /* Preview Content */,
+			);
+			path = edoc;
+			sourceTree = "<group>";
+		};
+		CD38C5392BA9FB03006A9A96 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD38C53A2BA9FB03006A9A96 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD38C5442BA9FB04006A9A96 /* edocTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD38C5452BA9FB04006A9A96 /* edocTests.swift */,
+			);
+			path = edocTests;
+			sourceTree = "<group>";
+		};
+		CD38C54E2BA9FB04006A9A96 /* edocUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD38C54F2BA9FB04006A9A96 /* edocUITests.swift */,
+				CD38C5512BA9FB04006A9A96 /* edocUITestsLaunchTests.swift */,
+			);
+			path = edocUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD38C52D2BA9FB01006A9A96 /* edoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD38C5552BA9FB04006A9A96 /* Build configuration list for PBXNativeTarget "edoc" */;
+			buildPhases = (
+				CD38C52A2BA9FB01006A9A96 /* Sources */,
+				CD38C52B2BA9FB01006A9A96 /* Frameworks */,
+				CD38C52C2BA9FB01006A9A96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = edoc;
+			productName = edoc;
+			productReference = CD38C52E2BA9FB01006A9A96 /* edoc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD38C5402BA9FB04006A9A96 /* edocTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD38C5582BA9FB04006A9A96 /* Build configuration list for PBXNativeTarget "edocTests" */;
+			buildPhases = (
+				CD38C53D2BA9FB04006A9A96 /* Sources */,
+				CD38C53E2BA9FB04006A9A96 /* Frameworks */,
+				CD38C53F2BA9FB04006A9A96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD38C5432BA9FB04006A9A96 /* PBXTargetDependency */,
+			);
+			name = edocTests;
+			productName = edocTests;
+			productReference = CD38C5412BA9FB04006A9A96 /* edocTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD38C54A2BA9FB04006A9A96 /* edocUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD38C55B2BA9FB04006A9A96 /* Build configuration list for PBXNativeTarget "edocUITests" */;
+			buildPhases = (
+				CD38C5472BA9FB04006A9A96 /* Sources */,
+				CD38C5482BA9FB04006A9A96 /* Frameworks */,
+				CD38C5492BA9FB04006A9A96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD38C54D2BA9FB04006A9A96 /* PBXTargetDependency */,
+			);
+			name = edocUITests;
+			productName = edocUITests;
+			productReference = CD38C54B2BA9FB04006A9A96 /* edocUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD38C5262BA9FB01006A9A96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CD38C52D2BA9FB01006A9A96 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					CD38C5402BA9FB04006A9A96 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CD38C52D2BA9FB01006A9A96;
+					};
+					CD38C54A2BA9FB04006A9A96 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = CD38C52D2BA9FB01006A9A96;
+					};
+				};
+			};
+			buildConfigurationList = CD38C5292BA9FB01006A9A96 /* Build configuration list for PBXProject "edoc" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD38C5252BA9FB01006A9A96;
+			productRefGroup = CD38C52F2BA9FB01006A9A96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD38C52D2BA9FB01006A9A96 /* edoc */,
+				CD38C5402BA9FB04006A9A96 /* edocTests */,
+				CD38C54A2BA9FB04006A9A96 /* edocUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD38C52C2BA9FB01006A9A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD38C53B2BA9FB03006A9A96 /* Preview Assets.xcassets in Resources */,
+				CD38C5382BA9FB03006A9A96 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD38C53F2BA9FB04006A9A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD38C5492BA9FB04006A9A96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD38C52A2BA9FB01006A9A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD38C5342BA9FB01006A9A96 /* ContentView.swift in Sources */,
+				CD38C5362BA9FB01006A9A96 /* Item.swift in Sources */,
+				CD38C5322BA9FB01006A9A96 /* edocApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD38C53D2BA9FB04006A9A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD38C5462BA9FB04006A9A96 /* edocTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD38C5472BA9FB04006A9A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD38C5502BA9FB04006A9A96 /* edocUITests.swift in Sources */,
+				CD38C5522BA9FB04006A9A96 /* edocUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD38C5432BA9FB04006A9A96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD38C52D2BA9FB01006A9A96 /* edoc */;
+			targetProxy = CD38C5422BA9FB04006A9A96 /* PBXContainerItemProxy */;
+		};
+		CD38C54D2BA9FB04006A9A96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD38C52D2BA9FB01006A9A96 /* edoc */;
+			targetProxy = CD38C54C2BA9FB04006A9A96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD38C5532BA9FB04006A9A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD38C5542BA9FB04006A9A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CD38C5562BA9FB04006A9A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = edoc/edoc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"edoc/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isextraordinary.edoc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD38C5572BA9FB04006A9A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = edoc/edoc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"edoc/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isextraordinary.edoc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CD38C5592BA9FB04006A9A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isextraordinary.edocTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/edoc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/edoc";
+			};
+			name = Debug;
+		};
+		CD38C55A2BA9FB04006A9A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isextraordinary.edocTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/edoc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/edoc";
+			};
+			name = Release;
+		};
+		CD38C55C2BA9FB04006A9A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isextraordinary.edocUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = edoc;
+			};
+			name = Debug;
+		};
+		CD38C55D2BA9FB04006A9A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isextraordinary.edocUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = edoc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD38C5292BA9FB01006A9A96 /* Build configuration list for PBXProject "edoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD38C5532BA9FB04006A9A96 /* Debug */,
+				CD38C5542BA9FB04006A9A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD38C5552BA9FB04006A9A96 /* Build configuration list for PBXNativeTarget "edoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD38C5562BA9FB04006A9A96 /* Debug */,
+				CD38C5572BA9FB04006A9A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD38C5582BA9FB04006A9A96 /* Build configuration list for PBXNativeTarget "edocTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD38C5592BA9FB04006A9A96 /* Debug */,
+				CD38C55A2BA9FB04006A9A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD38C55B2BA9FB04006A9A96 /* Build configuration list for PBXNativeTarget "edocUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD38C55C2BA9FB04006A9A96 /* Debug */,
+				CD38C55D2BA9FB04006A9A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD38C5262BA9FB01006A9A96 /* Project object */;
+}
