@@ -6,54 +6,78 @@
 //
 
 import SwiftUI
+
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    @State private var files: [URL] = []
+    @State private var fileContents: String = ""
+    
     var body: some View {
         NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+            VStack {
+                Button("Open Folder") {
+                    openFolder()
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-            .toolbar {
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                List(files, id: \.self) { fileURL in
+                    Button(action: {
+                        print("wowza")
+                    }) {
+                        Text(fileURL.lastPathComponent)
                     }
                 }
             }
+
         } detail: {
-            Text("Select an item")
+            TextEditor(text: $fileContents)
+                .monospaced()
+                .frame(minWidth: 200, minHeight: 1)
+                .padding(5)
         }
+        
     }
+    
+    func openFolder() {
+        let openPanel = NSOpenPanel()
+                openPanel.canChooseFiles = false
+                openPanel.canChooseDirectories = true
+                openPanel.allowsMultipleSelection = false
+                openPanel.begin { response in
+                    if response == .OK {
+                        if let folderURL = openPanel.url {
+                            do {
+                                let contents = try FileManager.default.contentsOfDirectory(at: folderURL, includingPropertiesForKeys: nil, options: [])
+                                files = contents
+                            } catch {
+                                print("Error while accessing directory: \(error.localizedDescription)")
+                            }
+                        }
+                    }
+                }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+struct ContentView_Previews : PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
+struct TextArea: NSViewRepresentable {
+    @Binding var text: String
+        
+        func makeNSView(context: Context) -> NSTextView {
+            let textView = NSTextView()
+            textView.isEditable = true
+            textView.isAutomaticQuoteSubstitutionEnabled = false
+            textView.isAutomaticDashSubstitutionEnabled = false
+            textView.isAutomaticTextReplacementEnabled = false
+            textView.textContainerInset = CGSize(width: 5, height: 5)
+            return textView
+        }
+        
+        func updateNSView(_ nsView: NSTextView, context: Context) {
+            nsView.string = text
+        }
 }

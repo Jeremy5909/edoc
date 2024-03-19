@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CD38C5322BA9FB01006A9A96 /* edocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38C5312BA9FB01006A9A96 /* edocApp.swift */; };
 		CD38C5342BA9FB01006A9A96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38C5332BA9FB01006A9A96 /* ContentView.swift */; };
-		CD38C5362BA9FB01006A9A96 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38C5352BA9FB01006A9A96 /* Item.swift */; };
 		CD38C5382BA9FB03006A9A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD38C5372BA9FB03006A9A96 /* Assets.xcassets */; };
 		CD38C53B2BA9FB03006A9A96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD38C53A2BA9FB03006A9A96 /* Preview Assets.xcassets */; };
 		CD38C5462BA9FB04006A9A96 /* edocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38C5452BA9FB04006A9A96 /* edocTests.swift */; };
@@ -38,7 +37,6 @@
 		CD38C52E2BA9FB01006A9A96 /* edoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD38C5312BA9FB01006A9A96 /* edocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edocApp.swift; sourceTree = "<group>"; };
 		CD38C5332BA9FB01006A9A96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CD38C5352BA9FB01006A9A96 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CD38C5372BA9FB03006A9A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD38C53A2BA9FB03006A9A96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD38C53C2BA9FB03006A9A96 /* edoc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = edoc.entitlements; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			children = (
 				CD38C5312BA9FB01006A9A96 /* edocApp.swift */,
 				CD38C5332BA9FB01006A9A96 /* ContentView.swift */,
-				CD38C5352BA9FB01006A9A96 /* Item.swift */,
 				CD38C5372BA9FB03006A9A96 /* Assets.xcassets */,
 				CD38C53C2BA9FB03006A9A96 /* edoc.entitlements */,
 				CD38C5392BA9FB03006A9A96 /* Preview Content */,
@@ -263,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD38C5342BA9FB01006A9A96 /* ContentView.swift in Sources */,
-				CD38C5362BA9FB01006A9A96 /* Item.swift in Sources */,
 				CD38C5322BA9FB01006A9A96 /* edocApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +427,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"edoc/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = edoc;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +454,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"edoc/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = edoc;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
