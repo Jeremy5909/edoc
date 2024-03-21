@@ -9,32 +9,96 @@ import SwiftUI
 
 import SwiftData
 
+enum languages: String, CaseIterable {
+    case py
+    case c
+    case cpp
+    case js
+    case swift
+    case lua
+    case ts
+    case java
+    case txt
+    
+    var displayName: String {
+        switch self {
+        case .py:
+            return "Python"
+        case .cpp:
+            return "C++"
+        case .js:
+            return "Javascript"
+        case .ts:
+            return "Typescript"
+        case .txt:
+            return "Text"
+        default:
+            return self.rawValue.capitalized
+        }
+    }
+}
+
 struct ContentView: View {
-    @State private var files: [URL] = []
-    @State private var fileContents: String = ""
+    @State private var docLang: languages = .txt
+    
+    @State private var currDir: URL? = nil
+    @State private var dirContents: [URL] = []
+    
+    @State private var currFile: URL? = nil
+    @State private var currFileContents: String = ""
     
     var body: some View {
         NavigationSplitView {
-            VStack {
-                Button("Open Folder") {
-                    openFolder()
+            VStack() {
+                HStack() {
+                    Spacer()
+                    Button(action: {openFolder()}) {
+                        Image(systemName: "square.and.arrow.down")
+                    }.buttonStyle(.borderless).keyboardShortcut("o")
+                    Button(action: {saveFile()}) {
+                        Image(systemName: "square.and.arrow.up").keyboardShortcut("s")
+                    }.buttonStyle(.borderless)
+                    Button(action: {newFile()}) {
+                        Image(systemName: "doc.badge.plus")
+                    }.buttonStyle(.borderless).keyboardShortcut("n")
                 }
-                List(files, id: \.self) { fileURL in
-                    Button(action: {
-                        print("wowza")
-                    }) {
-                        Text(fileURL.lastPathComponent)
-                    }
+                Spacer()
+                List(dirContents, id: \.self){ fileURL in
+                    Button(fileURL.lastPathComponent) {
+                        currFile = fileURL
+                        do {
+                            currFileContents = try String(contentsOf: fileURL)
+                        } catch {
+                            print("Error reading file: \(error.localizedDescription)")
+
+                        }
+                    }.buttonStyle(.plain)
                 }
             }
-
+            .padding(5.0)
         } detail: {
-            TextEditor(text: $fileContents)
-                .monospaced()
-                .frame(minWidth: 200, minHeight: 1)
-                .padding(5)
+            VStack {
+                TextEditor(text: $currFileContents)
+                    .monospaced()
+                    .padding(5)
+                HStack(alignment: .center) {
+                    Spacer()
+                    Label(docLang.displayName, systemImage: "doc.plaintext")
+                }
+                .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
+                Spacer()
+            }
         }
-        
+    }
+    
+    func saveFile() {
+        do {
+            try currFileContents.write(to: currFile!, atomically: true, encoding: .utf8)
+            print("File Saved Successfully!")
+        } catch {
+            print("Error saving file: \(error.localizedDescription)")
+
+        }
     }
     
     func openFolder() {
@@ -42,25 +106,37 @@ struct ContentView: View {
                 openPanel.canChooseFiles = false
                 openPanel.canChooseDirectories = true
                 openPanel.allowsMultipleSelection = false
-                openPanel.begin { response in
-                    if response == .OK {
-                        if let folderURL = openPanel.url {
-                            do {
-                                let contents = try FileManager.default.contentsOfDirectory(at: folderURL, includingPropertiesForKeys: nil, options: [])
-                                files = contents
-                            } catch {
-                                print("Error while accessing directory: \(error.localizedDescription)")
-                            }
-                        }
-                    }
+                openPanel.canCreateDirectories = true
+        openPanel.begin{result in
+            if result == .OK {
+                currDir = openPanel.url
+                do {
+                    let contents = try FileManager.default.contentsOfDirectory(at: currDir!, includingPropertiesForKeys: nil, options: [])
+                    dirContents = contents
                 }
-
+                catch {
+                    print("Error accessing directory: \(error.localizedDescription)")
+                }
+            }
+        }
+    }
+    
+    func newFile() {
+        let newPanel = NSSavePanel()
+        newPanel.canCreateDirectories = true
+        newPanel.directoryURL = currDir
+        newPanel.begin {result in
+            if result == .OK {
+                
+            }
+        }
     }
 }
 
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewLayout(.sizeThatFits)
     }
 }
 

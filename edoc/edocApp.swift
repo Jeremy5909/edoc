@@ -27,6 +27,20 @@ struct edocApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(.hiddenTitleBar) // Hide window title bar
         .modelContainer(sharedModelContainer)
+        
+        .commands {
+                    // Add custom menu items
+                    CommandMenu("Custom Menu") {
+                        Button("Option 1", action: {
+                            print("Option 1 clicked")
+                        })
+                        Button("Option 2", action: {
+                            print("Option 2 clicked")
+                        })
+                    }
+                }
+            
     }
 }
