@@ -56,8 +56,8 @@ struct ContentView: View {
                         Image(systemName: "square.and.arrow.down")
                     }.buttonStyle(.borderless).keyboardShortcut("o")
                     Button(action: {saveFile()}) {
-                        Image(systemName: "square.and.arrow.up").keyboardShortcut("s")
-                    }.buttonStyle(.borderless)
+                        Image(systemName: "square.and.arrow.up")
+                    }.buttonStyle(.borderless).keyboardShortcut("s")
                     Button(action: {newFile()}) {
                         Image(systemName: "doc.badge.plus")
                     }.buttonStyle(.borderless).keyboardShortcut("n")
@@ -72,7 +72,7 @@ struct ContentView: View {
                             print("Error reading file: \(error.localizedDescription)")
 
                         }
-                    }.buttonStyle(.plain)
+                    }.buttonStyle(.borderless)
                 }
             }
             .padding(5.0)
@@ -92,12 +92,16 @@ struct ContentView: View {
     }
     
     func saveFile() {
-        do {
-            try currFileContents.write(to: currFile!, atomically: true, encoding: .utf8)
-            print("File Saved Successfully!")
-        } catch {
-            print("Error saving file: \(error.localizedDescription)")
-
+        if let currFile {
+            do {
+                try currFileContents.write(to: currFile, atomically: true, encoding: .utf8)
+                print("File Saved Successfully!")
+            } catch {
+                print("Error saving file: \(error.localizedDescription)")
+                
+            }
+        } else {
+            newFile()
         }
     }
     
@@ -122,15 +126,14 @@ struct ContentView: View {
     }
     
     func newFile() {
-        let newPanel = NSSavePanel()
-        newPanel.canCreateDirectories = true
-        newPanel.directoryURL = currDir
-        newPanel.begin {result in
-            if result == .OK {
-                
+        let newFile = currDir!.path() + "/file"
+        print(newFile)
+            if FileManager.default.createFile(atPath: newFile, contents: nil) {
+                print("File created successfully!")
+            } else {
+                print("Error creating file")
             }
         }
-    }
 }
 
 struct ContentView_Previews : PreviewProvider {
